@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="D_Articulos.cs" />
     <Compile Include="Frm_articulos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +58,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="P_Articulos.cs" />
+    <EmbeddedResource Include="Frm_articulos.resx">
+      <DependentUpon>Frm_articulos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

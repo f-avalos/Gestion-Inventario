@@ -51,7 +51,17 @@
             this.label6 = new System.Windows.Forms.Label();
             this.Txt_buscar = new System.Windows.Forms.TextBox();
             this.Btn_buscar = new System.Windows.Forms.Button();
+            this.Pnl_um = new System.Windows.Forms.Panel();
+            this.Btn_retornar_um = new System.Windows.Forms.Button();
+            this.Dgv_um = new System.Windows.Forms.DataGridView();
+            this.Pnl_ca = new System.Windows.Forms.Panel();
+            this.Btn_retornar_ca = new System.Windows.Forms.Button();
+            this.Dgv_ca = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_articulos)).BeginInit();
+            this.Pnl_um.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_um)).BeginInit();
+            this.Pnl_ca.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ca)).BeginInit();
             this.SuspendLayout();
             // 
             // Dgv_articulos
@@ -124,22 +134,28 @@
             // Btn_lupa_um
             // 
             this.Btn_lupa_um.Enabled = false;
+            this.Btn_lupa_um.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Btn_lupa_um.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_lupa_um.Location = new System.Drawing.Point(295, 61);
             this.Btn_lupa_um.Name = "Btn_lupa_um";
             this.Btn_lupa_um.Size = new System.Drawing.Size(35, 23);
             this.Btn_lupa_um.TabIndex = 7;
             this.Btn_lupa_um.Text = ":::";
             this.Btn_lupa_um.UseVisualStyleBackColor = true;
+            this.Btn_lupa_um.Click += new System.EventHandler(this.Btn_lupa_um_Click);
             // 
             // Btn_lupa_ca
             // 
             this.Btn_lupa_ca.Enabled = false;
+            this.Btn_lupa_ca.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Btn_lupa_ca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_lupa_ca.Location = new System.Drawing.Point(295, 134);
             this.Btn_lupa_ca.Name = "Btn_lupa_ca";
             this.Btn_lupa_ca.Size = new System.Drawing.Size(35, 23);
             this.Btn_lupa_ca.TabIndex = 10;
             this.Btn_lupa_ca.Text = "...";
             this.Btn_lupa_ca.UseVisualStyleBackColor = true;
+            this.Btn_lupa_ca.Click += new System.EventHandler(this.Btn_lupa_ca_Click);
             // 
             // Txt_descripcion_ca
             // 
@@ -179,6 +195,8 @@
             // 
             // Btn_cancelar
             // 
+            this.Btn_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_cancelar.Location = new System.Drawing.Point(707, 43);
             this.Btn_cancelar.Name = "Btn_cancelar";
             this.Btn_cancelar.Size = new System.Drawing.Size(101, 36);
@@ -190,6 +208,8 @@
             // 
             // Btn_guardar
             // 
+            this.Btn_guardar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_guardar.Location = new System.Drawing.Point(707, 98);
             this.Btn_guardar.Name = "Btn_guardar";
             this.Btn_guardar.Size = new System.Drawing.Size(101, 36);
@@ -201,6 +221,8 @@
             // 
             // Btn_nuevo
             // 
+            this.Btn_nuevo.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_nuevo.Location = new System.Drawing.Point(887, 101);
             this.Btn_nuevo.Name = "Btn_nuevo";
             this.Btn_nuevo.Size = new System.Drawing.Size(100, 100);
@@ -211,6 +233,8 @@
             // 
             // Btn_actualizar
             // 
+            this.Btn_actualizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Btn_actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_actualizar.Location = new System.Drawing.Point(1010, 101);
             this.Btn_actualizar.Name = "Btn_actualizar";
             this.Btn_actualizar.Size = new System.Drawing.Size(100, 100);
@@ -221,6 +245,8 @@
             // 
             // Btn_eliminar
             // 
+            this.Btn_eliminar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_eliminar.Location = new System.Drawing.Point(887, 218);
             this.Btn_eliminar.Name = "Btn_eliminar";
             this.Btn_eliminar.Size = new System.Drawing.Size(100, 100);
@@ -231,21 +257,27 @@
             // 
             // Btn_reporte
             // 
+            this.Btn_reporte.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Btn_reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_reporte.Location = new System.Drawing.Point(1010, 218);
             this.Btn_reporte.Name = "Btn_reporte";
             this.Btn_reporte.Size = new System.Drawing.Size(100, 100);
             this.Btn_reporte.TabIndex = 17;
             this.Btn_reporte.Text = "Reporte";
             this.Btn_reporte.UseVisualStyleBackColor = true;
+            this.Btn_reporte.Click += new System.EventHandler(this.Btn_reporte_Click);
             // 
             // Btn_salir
             // 
+            this.Btn_salir.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_salir.Location = new System.Drawing.Point(887, 333);
             this.Btn_salir.Name = "Btn_salir";
             this.Btn_salir.Size = new System.Drawing.Size(223, 50);
             this.Btn_salir.TabIndex = 18;
             this.Btn_salir.Text = "Salir";
             this.Btn_salir.UseVisualStyleBackColor = true;
+            this.Btn_salir.Click += new System.EventHandler(this.Btn_salir_Click);
             // 
             // label6
             // 
@@ -265,6 +297,8 @@
             // 
             // Btn_buscar
             // 
+            this.Btn_buscar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_buscar.Location = new System.Drawing.Point(643, 23);
             this.Btn_buscar.Name = "Btn_buscar";
             this.Btn_buscar.Size = new System.Drawing.Size(35, 23);
@@ -273,11 +307,85 @@
             this.Btn_buscar.UseVisualStyleBackColor = true;
             this.Btn_buscar.Click += new System.EventHandler(this.Btn_buscar_Click);
             // 
+            // Pnl_um
+            // 
+            this.Pnl_um.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pnl_um.Controls.Add(this.Btn_retornar_um);
+            this.Pnl_um.Controls.Add(this.Dgv_um);
+            this.Pnl_um.Location = new System.Drawing.Point(350, 139);
+            this.Pnl_um.Name = "Pnl_um";
+            this.Pnl_um.Size = new System.Drawing.Size(202, 184);
+            this.Pnl_um.TabIndex = 19;
+            this.Pnl_um.Visible = false;
+            // 
+            // Btn_retornar_um
+            // 
+            this.Btn_retornar_um.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Btn_retornar_um.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_retornar_um.Location = new System.Drawing.Point(3, 138);
+            this.Btn_retornar_um.Name = "Btn_retornar_um";
+            this.Btn_retornar_um.Size = new System.Drawing.Size(196, 36);
+            this.Btn_retornar_um.TabIndex = 20;
+            this.Btn_retornar_um.Text = "Retornar";
+            this.Btn_retornar_um.UseVisualStyleBackColor = true;
+            this.Btn_retornar_um.Click += new System.EventHandler(this.Btn_retornar_um_Click);
+            // 
+            // Dgv_um
+            // 
+            this.Dgv_um.AllowUserToAddRows = false;
+            this.Dgv_um.AllowUserToDeleteRows = false;
+            this.Dgv_um.AllowUserToOrderColumns = true;
+            this.Dgv_um.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_um.Location = new System.Drawing.Point(3, 3);
+            this.Dgv_um.Name = "Dgv_um";
+            this.Dgv_um.ReadOnly = true;
+            this.Dgv_um.Size = new System.Drawing.Size(196, 129);
+            this.Dgv_um.TabIndex = 20;
+            this.Dgv_um.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_um_CellDoubleClick);
+            // 
+            // Pnl_ca
+            // 
+            this.Pnl_ca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pnl_ca.Controls.Add(this.Btn_retornar_ca);
+            this.Pnl_ca.Controls.Add(this.Dgv_ca);
+            this.Pnl_ca.Location = new System.Drawing.Point(573, 139);
+            this.Pnl_ca.Name = "Pnl_ca";
+            this.Pnl_ca.Size = new System.Drawing.Size(202, 184);
+            this.Pnl_ca.TabIndex = 21;
+            this.Pnl_ca.Visible = false;
+            // 
+            // Btn_retornar_ca
+            // 
+            this.Btn_retornar_ca.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Btn_retornar_ca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_retornar_ca.Location = new System.Drawing.Point(3, 138);
+            this.Btn_retornar_ca.Name = "Btn_retornar_ca";
+            this.Btn_retornar_ca.Size = new System.Drawing.Size(196, 36);
+            this.Btn_retornar_ca.TabIndex = 20;
+            this.Btn_retornar_ca.Text = "Retornar";
+            this.Btn_retornar_ca.UseVisualStyleBackColor = true;
+            this.Btn_retornar_ca.Click += new System.EventHandler(this.Btn_retornar_ca_Click);
+            // 
+            // Dgv_ca
+            // 
+            this.Dgv_ca.AllowUserToAddRows = false;
+            this.Dgv_ca.AllowUserToDeleteRows = false;
+            this.Dgv_ca.AllowUserToOrderColumns = true;
+            this.Dgv_ca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_ca.Location = new System.Drawing.Point(3, 3);
+            this.Dgv_ca.Name = "Dgv_ca";
+            this.Dgv_ca.ReadOnly = true;
+            this.Dgv_ca.Size = new System.Drawing.Size(196, 129);
+            this.Dgv_ca.TabIndex = 20;
+            this.Dgv_ca.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_ca_CellDoubleClick);
+            // 
             // Frm_articulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1127, 450);
+            this.Controls.Add(this.Pnl_ca);
+            this.Controls.Add(this.Pnl_um);
             this.Controls.Add(this.Btn_salir);
             this.Controls.Add(this.Btn_reporte);
             this.Controls.Add(this.Btn_eliminar);
@@ -302,9 +410,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Dgv_articulos);
             this.Name = "Frm_articulos";
-            this.Text = "Frm_articulos";
+            this.Text = "Mantenimiento de Artículos";
             this.Load += new System.EventHandler(this.Frm_articulos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_articulos)).EndInit();
+            this.Pnl_um.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_um)).EndInit();
+            this.Pnl_ca.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ca)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,5 +447,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox Txt_buscar;
         private System.Windows.Forms.Button Btn_buscar;
+        private System.Windows.Forms.Panel Pnl_um;
+        private System.Windows.Forms.Button Btn_retornar_um;
+        private System.Windows.Forms.DataGridView Dgv_um;
+        private System.Windows.Forms.Panel Pnl_ca;
+        private System.Windows.Forms.Button Btn_retornar_ca;
+        private System.Windows.Forms.DataGridView Dgv_ca;
     }
 }
